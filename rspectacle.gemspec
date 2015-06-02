@@ -13,6 +13,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "http://finleye.github.io"
   spec.license       = "MIT"
 
+  spec.required_ruby_version = '~> 2.0'
   spec.files         = `git ls-files -z`.split("\x0")
   spec.executables    = ["rspectacle"]
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
