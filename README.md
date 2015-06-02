@@ -21,7 +21,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    $ rspectacle
 
 ## Contributing
 
@@ -30,23 +30,3 @@ TODO: Write usage instructions here
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
-
-
-# Rspectacle
-
-
-## Installation
-
-The following line has been added to the gemfile to load the gem
-locally:
-
-    gem 'rspectacle'
-
-## Testing
-To run test suite execute:
-
-    $ rspec spec
-
-## Usage
-
-    $ rspectacle
