@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'rspectacle'
+
+gatherer = Rspectacle::FileGather.new
+Rspectacle::SpecRunner.new(gatherer.specs_to_run).run
