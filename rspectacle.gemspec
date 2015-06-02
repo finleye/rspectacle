@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Corey Finley"]
   spec.email         = ["finley.corey@gmail.com"]
   spec.summary       = %q{Run specs for altered files}
-  spec.description   = %q{Based on git status, all relevant specs are run}
+  spec.description   = %q{Runs associated spec files for modified files in git status}
   spec.homepage      = "http://finleye.github.io"
   spec.license       = "MIT"
 
