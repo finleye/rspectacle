@@ -11,8 +11,8 @@ module Rspectacle
     end
 
     def specs_to_run
-      spec_files = convert_to_spec.select{|file| file =~ /_spec\.rb$/}.uniq
-      spec_files.select{|path| File.exist? path}
+      spec_files = convert_to_spec.select { |file| file =~ /_spec\.rb$/ }.uniq
+      spec_files.select { |path| File.exist? path }
     end
 
     private
@@ -20,15 +20,16 @@ module Rspectacle
     def convert_to_spec
       files.each do |file_path|
         next if file_path =~ /^spec/
-        in_app = app_paths.any? { |path| file_path =~ path}
-        file_path.gsub!(/^app\//, "") if in_app
-        file_path.gsub!(/\.rb$/, '_spec.rb')
+        in_app_path = app_paths.any? { |path| file_path =~ path }
+        file_path.gsub!(/^app\//, "") if in_app_path
+        file_path.gsub!(/\.rb$/, "_spec.rb")
         file_path.prepend "spec/"
       end
     end
 
     def app_paths
-      [/\/controllers\//, /\/models\//, /\/views\//, /\/helpers\//, /\/workers\//, /\/policies\//]
+      [/\/controllers\//, /\/models\//, /\/views\//, /\/helpers\//, /\/workers\//,
+       /\/policies\//, /\/presenters\//]
     end
 
     def reject_paths
