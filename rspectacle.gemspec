@@ -25,5 +25,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'pry', '~> 0.9.12.2'
 
   spec.add_runtime_dependency 'hashie'
-  spec.add_runtime_dependency 'haml', '~> 4.0.3'
+  spec.add_runtime_dependency 'haml', '~> 5.0.4'
 end
